@@ -1,7 +1,7 @@
 let productData = [];
 const btnAddProduct =document.getElementById('addProduct');
 const btnClearAll =document.getElementById('clearAll');
-const productList =document.getElementById('productList');
+const productStatus =document.getElementById('productList');
 const productCount =document.getElementById('productCount');
 const productTitle = document.getElementById('title');
 const productPrice = document.getElementById('price');
@@ -30,7 +30,7 @@ btnClearAll.addEventListener('click', (e) => {
     concatString(productData);
 });
 
-productList.addEventListener('click', (e) => {
+productStatus.addEventListener('click', (e) => {
     const action = e.target.dataset.action;
     const id = e.target.dataset.id;
     if (action === 'remove') {
